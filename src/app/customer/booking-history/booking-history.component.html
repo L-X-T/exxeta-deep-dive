@@ -29,3 +29,11 @@
     </ol>
   </ng-template>
 </div>
+
+<div>
+  <ng-container *ngTemplateOutlet="tmpl2"></ng-container>
+
+  <ng-template #tmpl2><h2>Hello world!</h2></ng-template>
+
+  <ng-container *ngComponentOutlet="flightSearchComponent"></ng-container>
+</div>
