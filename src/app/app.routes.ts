@@ -20,6 +20,10 @@ export const APP_ROUTES: Routes = [
     component: AboutComponent
   },
   {
+    path: 'customer/booking-history',
+    loadComponent: () => import('./customer/booking-history/booking-history.component').then((c) => c.BookingHistoryComponent)
+  },
+  {
     path: '**',
     component: NotFoundComponent
   }
